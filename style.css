@@ -1,0 +1,162 @@
+/* stage 7·5a · slide: s6-render · indicators 2, 7 · end state */
+/* Little Lemon — style.css
+   Built in class order. Each block is added on one deck section. */
+
+/* ===== 1. A first rule: element selectors (§2) ===== */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1C2B2B;
+  background-color: #FCFDFC;
+}
+
+h1 {
+  color: #064E4F;
+}
+
+h2 {
+  color: #064E4F;
+}
+
+/* ===== 2. Selectors: id, class, descendant, child, :hover (§2) ===== */
+
+#site-name {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#tagline {
+  color: #5F7171;
+  font-style: italic;
+}
+
+.price {
+  font-weight: bold;
+  color: #B86B00;
+}
+
+header a {
+  color: #064E4F;
+  text-decoration: none;
+}
+
+nav > ul > li > a {
+  color: #0067AC;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+a.current {
+  font-weight: bold;
+}
+
+/* ===== 3. Colour and text (§3) ===== */
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+footer {
+  color: #FCFDFC;
+  background-color: #064E4F;
+  font-size: 14px;
+}
+
+/* ===== 4. Box model (§4) ===== */
+
+main {
+  width: 720px;
+  padding: 24px;
+  border: 1px solid #B9CECE;
+}
+
+.dish {
+  min-height: 135px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid #B9CECE;
+  background-color: #E8EFEF;
+}
+
+table, th, td {
+  border: 1px solid #5F7171;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 16px;
+}
+
+th {
+  background-color: #E8EFEF;
+}
+
+footer {
+  padding: 16px 24px;
+}
+
+/* ===== 5. Document flow and alignment (§5) ===== */
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 24px;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+.dish img {
+  float: right;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.dish h2 {
+  margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* ===== 6. States and messages set by script (Week 5) ===== */
+
+.open {
+  color: #064E4F;
+  font-weight: bold;
+}
+
+.closed {
+  color: #B86B00;
+  font-weight: bold;
+}
+
+#seating-note, #requests-count {
+  color: #5F7171;
+  font-size: 14px;
+}
+
+#form-message {
+  color: #B86B00;
+  font-weight: bold;
+}

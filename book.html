@@ -1,0 +1,64 @@
+<!-- stage 7·5a · slide: s6-render · indicators 2, 7 · end state -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book a Table</title>
+    <meta name="description" content="Middle Eastern food in the Main District.">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="book.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p id="site-name"><a href="index.html">Little Lemon</a></p>
+      <p id="tagline">Middle Eastern food in the Main District</p>
+      <p id="open-status">Open daily, 11:00–22:00</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="book.html" class="current">Book a Table</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Book a Table</h1>
+      <form action="/book" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="party">Party size</label>
+        <input type="number" id="party" name="party" min="1" max="12" required>
+        <br>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" min="11:00" max="21:00" required>
+        <br>
+        <input type="radio" id="indoor" name="seating" value="indoor">
+        <label for="indoor">Indoor</label>
+        <input type="radio" id="outdoor" name="seating" value="outdoor">
+        <label for="outdoor">Outdoor</label>
+        <br>
+        <p id="seating-note" hidden>Outdoor tables are not covered. If it rains, we will seat you inside.</p>
+        <label for="requests">Special requests</label>
+        <textarea id="requests" name="requests" rows="3" maxlength="200"></textarea>
+        <p id="requests-count">Up to 200 characters</p>
+        <p id="form-message"></p>
+        <input type="submit" value="Book a table">
+      </form>
+    </main>
+
+    <footer>
+      <p>123 Rome Road, Main District, Capital City</p>
+      <p>Open daily, 11:00–22:00 · (021) 555 0123</p>
+    </footer>
+  </body>
+</html>
